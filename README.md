@@ -1,2 +1,23 @@
-# bootcamp-inter
-Atividades desenvolvidas ao longo do Bootcamp Inter - Digital Innovation One
+<h1 style="font-variant: small-caps">Bootcamp-Inter 🧡</></h1>
+
+### < Hello World! >
+Aqui está o registro das atividades desenvolvidas ao longo do Bootcamp Inter na **Digital Innovation One**. </br>
+Estará disponível em branchs para cada exercício, projeto e curso realizado!
+
+<div align="center">
+    <img src="https://www.dio.me/components/pages/dev-week/BANNER-INTER-DEV-WEEK%207.png">
+</div>
+  
+####  Done 🧠
+- Lógica de Programação Essencial ✅
+- Estrutura de dados e Algoritmos ✅
+- Introdução ao Git & GitHub ✅
+-  Introdução a criação de websites com HTML5 e CSS3 ✅
+
+####  Learning 🚀
+- Construindo páginas para internet com Bootstrap ⏩
+
+### Find me  🌎
+>Cami 👩🏽‍💻</br> </br>
+><a href="https://www.linkedin.com/in/camila-silva-8968aa1b3/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+><a href="https://instagram.com/camii.las" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
