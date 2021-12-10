@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+.navbar{
+    /* background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/bootcamp-inter/Bootstrap/img/image9.jpeg), center no-repeat; */
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    justify-content: space-between;
+}
+.nav-link{
+    color: rgb(179, 179, 179);
+    text-shadow: 0 0 1rem black;
+    font-size: 3vh;
+    transition: .5s;
+}
+.nav-link:hover{
+    color: crimson;
+    transform: scale(1.1);
+}
+.logo{
+    height: 6vh;
+    filter: drop-shadow(0 0 1rem rgb(202, 145, 145));
+    transition: .5s;
+}
+.logo:hover{
+    filter: drop-shadow(0 0 1rem crimson);
+    transform: scale(1.1);
+}
+body{
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0)), url(/bootcamp-inter/Bootstrap/img/image10.jpeg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 1rem rgb(199, 124, 124);
+    font-weight: bold;
+}
