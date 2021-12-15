@@ -2,7 +2,7 @@
 
 ### < Hello World! >
 Aqui está o registro das atividades desenvolvidas ao longo do Bootcamp Inter na **Digital Innovation One**. </br>
-Estará disponível em branchs para cada exercício, projeto e curso realizado!
+Estará disponível em branches para cada exercício, projeto e curso realizado!
 
 <div align="center">
     <img src="https://www.dio.me/components/pages/dev-week/BANNER-INTER-DEV-WEEK%207.png">
