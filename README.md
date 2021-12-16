@@ -18,7 +18,7 @@ Estará disponível em branches para cada exercício, projeto e curso realizado!
 -  Introdução ao JavaScript ✅
 
 ####  Learning 🚀
-- Sintaxe e Operadores ⏩
+- Sintaxe e Operadores JS ⏩
 
 ### Find me  🌎
 >Cami 👩🏽‍💻</br> </br>
