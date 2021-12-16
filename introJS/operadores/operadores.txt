@@ -1,0 +1,36 @@
+* operadores JS - atribuição *
+=
++= x+=y -> x=x+y
+*=
+/=
+%=
+
+* operadores JS - operadores *
++ adição
+- subtração
+* multiplicação
+** exponencial
+/ divisão
+% modulo
+++ incrementar 
+-- decrementar
+
+* operadores JS - comparação *
+== o valor
+=== valor e tipo
+!= diferença valor
+!== diferença valor tipo
+> maior q
+< menor q
+>= maior igual q
+<= menor igual q
+
+* operadores JS - lógicas *
+&& 'e' lógico
+|| 'ou' lógico
+! negação/"nao" lógico
+
+* operadores JS - condicional (ternário)*
+(condition) ? expression1 : expression2
+if(condition)
+else
