@@ -1,0 +1,2 @@
+* node arquivo.js *
+serve para printar no terminal o console, estando dentro da pasta que está o arquivo.
