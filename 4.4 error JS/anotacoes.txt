@@ -1,0 +1,72 @@
+Tipos de erros:
+	- ECMAScript 
+	Erro que acontece em tempo de execução, quando há algum erro no código.
+	Mensagem, erro, linha e call stack (pilha onde aconteceu)
+	- DOMException
+	Erro no DOM (Document Object Model), ou seja, um erro direto na página web.
+
+Tratando erros:
+	- Throw:
+	É uma forma de tratar um erro, como se fosse um return. Fazendo assim o nome do erro ("personalizado").
+	
+	Function verificarPalindromo(string){
+		If(!string) throw "String Inválida";
+		...
+	}
+
+	- Try/Cath: 
+	Verifica a função e se tiver algum tipo de erro dentro do cath. Cath recebe o erro e console a mensagem do erro.
+	
+	Function tryCathEx(string){
+		Try{
+			verificarPalindromo(string)
+		}cath(e){
+			Console.log(e.message)
+		}
+	}
+	
+	- Finally:
+	É um escopo que verifica o input sendo true ou false. É chamada se tiver erro ou não.
+	
+	Function tryCathEx(string){
+		Try{
+			verificarPalindromo(string)
+		}cath(e){
+			Console.log(e)
+		}finally{
+			Console.log('a string foi: '+string)
+		}
+	}
+
+
+	Como manipular Objeto Error:
+	
+		New Error(message, fileName, lineNumber)
+		
+		Parâmetros opcionais!
+		
+		Const MeuErro = new Error('Mensagem inválida');
+		
+		Throw MeuErro;
+		Mensagem do erro é executada;
+		
+	Em caso de nomeação do erro é feita dessa forma:
+	
+	Const MeuErro = new Error('mensagem de erro');
+	MeuErro.name = 'mensagem inválida';
+	Throw MeuErro;
+	
+	Compatível com:
+		Google Chrome, Firefox, IE, Opera e Safari.
+		
+	MeuErro.stack ((pilha)onde foi executado e onde encontrou o erro)
+
+Links essenciais:
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/instanceof
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/typeof
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch

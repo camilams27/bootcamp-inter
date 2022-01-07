@@ -1,0 +1,5 @@
+Spread JS:
+...(objeto iteravel) 
+    - objeto iteravel é um objeto ou estrutura de dados que pode interar por ele (array, string, 
+    etc)
+desmembra todo objeto iteravel e transforma em pedaços individuais.
