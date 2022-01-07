@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* container principal */
+#container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* sub-container esquerdo */
+#left{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5) 100%), url("https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+}
+#meImg{
+    border-radius: 50%;
+}
+#name, #title{
+    font-size: 5vh;
+}
+#ocupation{
+    font-size: 3vh;
+}
+a{
+    text-decoration: none;
+}
+#listLeft{
+    list-style: none;
+    font-size: 3vh;
+}
+
+#left, #right{
+    width: 50%;
+}
+
+/* sub-container direito */
+#right{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    gap: 3vh;
+}
+#content{
+    font-size: 2vh;
+}
+#listRight{
+    display: flex;
+    gap: 10vw;
+    font-size: 3vh;
+}
+

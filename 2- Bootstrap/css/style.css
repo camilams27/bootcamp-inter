@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+.navbar{
+    /* background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/bootcamp-inter/Bootstrap/img/image9.jpeg), center no-repeat; */
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    background-size: cover;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.nav-link{
+    color: rgb(179, 179, 179);
+    text-shadow: 0 0 1rem black;
+    font-size: 3vh;
+    transition: .5s;
+}
+.nav-link:hover{
+    color: crimson;
+    transform: scale(1.1);
+}
+.logo{
+    height: 6vh;
+    filter: drop-shadow(0 0 1rem rgb(202, 145, 145));
+    transition: .5s;
+}
+.logo:hover{
+    filter: drop-shadow(0 0 1rem crimson);
+    transform: scale(1.1);
+}
+body{
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.0)), url(/bootcamp-inter/Bootstrap/img/image10.jpeg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 1rem rgb(199, 124, 124);
+    font-weight: bold;
+}
+
+.row{
+    justify-content: center;
+    gap: 2.5rem;
+    height: 50vh;
+}
+.img{
+    background-position: center;
+    background-size: cover;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+}
+.um{
+    background-image: url("../img/obra4.jpeg");
+}
+.um:hover{
+    transform: scale(1.1);
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)), url("../img/obra4.jpeg") center;
+    background-size: cover;
+}
+.dois{
+    background-image: url("../img/obra2.jpeg");
+}
+.dois:hover{
+    transform: scale(1.1);
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)), url("../img/obra2.jpeg") center;
+    background-size: cover;
+}
+.tres{
+    background-image: url("../img/obra3.jpeg");
+    transition: .5s;
+}
+.tres:hover{
+    transform: scale(1.1);
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)), url("../img/obra3.jpeg") center;
+    background-size: cover;
+}
+.um:hover> .info, .dois:hover> .info, .tres:hover> .info{
+    display: flex;
+    color: white;
+}
+.aboutInfo{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    color: white;
+    padding: 1rem;
+    font-size: 3vh;
+    width: 70vw;
+}
+footer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.5));
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: rgb(199, 124, 124);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(124, 33, 33);
+}

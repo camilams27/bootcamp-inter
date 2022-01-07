@@ -1,0 +1,22 @@
+* addEventListener *
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+});
+
+-----------------------------------------------------
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+* desabilitando botao *
+
+document.getElementById("botao").disabled = true;
+
+-----------------------------------------------------
+
+EventListener
+document.getElementById("input").addEventListener("input", function)

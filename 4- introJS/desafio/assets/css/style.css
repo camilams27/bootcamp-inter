@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+input, button{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid ;
+}
+button{
+    background-color: lightblue;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    margin: 5px 0;    
+}
+
+input[type='checkbox']{
+    cursor: pointer;
+}
