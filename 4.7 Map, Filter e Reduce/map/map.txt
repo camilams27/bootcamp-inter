@@ -1,0 +1,14 @@
+map:
+- não altera o array original
+- cria um novo array, com as modificações
+- realiza as operações em ordem, do primeiro até o ultimo indice
+
+sntaxe:
+array.map(callback, thisArg);
+callback - função a ser executada em cada elemento
+thisArg - *opcional. 
+
+map vs forEach: diferença é o valor retornado.
+array=[1,2,3]
+array.map((item)=> item*2); retorna [2,4,6]
+array.forEach((item)=> item*2); retorna undefined, precisa-se colocar o array modificado(resultado) em alguma cosntante para ser utilizado.

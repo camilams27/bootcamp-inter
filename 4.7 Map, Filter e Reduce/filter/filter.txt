@@ -1,0 +1,9 @@
+filter:
+apenas os itens que corresponder a determinada condição será retornado.
+-cria um novo array;
+-não modifica o array original.
+
+sintaxe:
+array.filter(callback, thisArg)
+callback - função a ser execudata para cada elemento, no filter pode ser uma comparação
+thisArg*

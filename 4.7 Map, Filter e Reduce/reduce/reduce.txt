@@ -1,0 +1,7 @@
+reduce:
+executa uma função para todos os itens do array e retoruna um valor único.
+
+.reduce(callbackFn, initialValue)
+callbackFn - a função a ser executada a partir do acumulador;
+callbackFn = function (accumulatr, currentValue, index, array)
+initialValue/valor inicial - o valor sobre o qual o retorno final irá atuar.
