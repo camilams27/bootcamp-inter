@@ -1,0 +1,47 @@
+DOM;
+document object model - o dom html é um padrão de como acessar e modificar os elementos html de um página.
+
+BOM:
+browser object model - tudo que está dentro do objeto window. Um nível acima do document(dom);
+
+Métodos para manipular o dom:
+tag - id - class
+
+document.getElementById('titulo'); - titulo 
+
+document.getElementsByTagName('li'); - retorna um array
+
+document.getElementsByClassName('textos') - retona array, com as classes
+
+document.querySlectorAll('.primeira-classe .segunda-classe') - retorna array, pesquisa por tag, id ou classe. ex: document.querySlectorAll('li .opcao');
+*.classe #id
+
+para adicionar e deletar 
+document.createElement('nome do elemento') - cria um novo elemento html
+
+document.removeChild(elemento) - remove um elemento
+
+document.appendChild(elemento) - adiciona um elemento
+
+document.replaceChild(new, old) - substitui um elemento
+
+Estilos
+const = meuElemento = document.getElementById('meu-elemento');
+
+meuElemento.classList.add('light') - adicionar uma classe ou mais uma classe.
+meuElemento.classList.remove('light') - remove a classe do elemento.
+meuElemento.classList.toggle('dark') - se ele encontrar a classe ele remove, caso não adiciona.
+
+document.getElementsByTagName('p').style.color = "blue";
+
+
+Eventos:
+Qualquer tipo de ação que o user faz numa página web.
+
+Tipos: 
+de mouse : mouseover, mouseout 
+click : click, dbclick (double click)
+atualização: change, load
+
+Acionando eventos:
+meuElemento.addEventListener("click", outraFunção)
