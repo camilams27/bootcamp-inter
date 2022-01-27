@@ -30,3 +30,9 @@ function frase(N){
   return '------------------------------------';
 }
 console.log(frase(36))
+
+function parametro(N,L){
+  return N*L
+}
+
+console.log(parametro(5,7))
