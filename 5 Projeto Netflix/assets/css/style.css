@@ -1,0 +1,205 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    background-color: var(--black);
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.3),rgba(0,0,0,.0));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    filter:invert(100%);
+    height: 11vh;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5vw;
+    padding-left: 2.5vw;
+}
+
+nav{
+    display: flex;
+    gap: 2vw;
+}
+
+a{
+    color: #AAA;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.navTopics:hover{
+    color: white;
+}
+
+.presence{
+    color: white;
+}
+
+.user{
+    margin-right: 2.5vw;
+    color: #AAA;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.userImg{
+    height: 7.5vh;
+    border-radius: 5px;
+}
+
+.fa-caret-down:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+#film{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('../img/ElaborateImpressiveGilamonster-mobile.gif') center no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+}
+
+#info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: .3rem;
+    padding-left: 3vw;
+    width: 50%;
+}
+
+#info h2{
+    font-size: 8vh;
+    background: -webkit-linear-gradient(bottom, pink, pink, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#info p{
+    font-size: 4.2vh;
+}
+
+#buttons{
+    display: flex;
+    gap: 2vw;
+}
+
+#buttons button{
+    height: 8vh;
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+   
+    border: none;
+    border-radius: 5px;
+
+    margin-top: 5px;
+}
+
+.fa-info-circle{
+    font-size: 1rem;
+}
+.fa-play{
+    font-size: .8rem;    
+}
+
+
+.btnFilmVideo{
+    color: black;
+}
+
+.btnFilmInfo{
+    color: white;
+}
+
+#btn2{
+    background: linear-gradient(rgb(133, 133, 133,.8), rgba(133, 133, 133,.8));
+    color: white;
+}
+
+#btn1:hover, #btn2:hover{
+    background: linear-gradient(rgb(200, 200, 200, .8), rgba(200, 200, 200,.8));
+    cursor: pointer;
+    transition: .8s;
+}
+
+/* Carousel */
+
+#colection{
+    margin-top: .5rem;
+}
+
+.box-film{
+    height: 50vh;
+    width: 10vw;
+    display: block;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.owl-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: whitesmoke;
+    font-size: 5rem;
+    padding: 0;
+   
+    position: absolute;
+    top: 35%;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    background-color: red;
+}
+
+/* footer */
+.create{
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+}
+
+.create > a:hover{
+    color: rgb(58, 174, 212);
+}
+
+/* popup */
+.blockFilm{
+    display: flex;
+}
+
+.imgFilmAPI{
+    height: 50vh;
+}
+

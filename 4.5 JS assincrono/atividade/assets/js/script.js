@@ -9,7 +9,7 @@ const getCats = async () => {
 
         return json.webpurl;
         console.log(json)
-    } catch (error) {
+    }catch (error) {
         console.log(error);
     }
 }
