@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
     <title>studio ghibli</title>
 </head>
 <body>
     <div id="film">
         <header>
             <div class="container">
-                <h2>studio ghibli</h2>
+                <img id="logo" src="assets/img/pngwing.com.png" alt="">
                 <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Novidades</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Outras produções</a>
+                    <a class="navTopics" id="outset" href="#film">Início</a>
+                    <a class="navTopics" id="news" href="#">Novidades</a>
+                    <a class="navTopics" id="films" href="#colection">Filmes</a>
+                    <a class="navTopics" id="others" href="#">Outras produções</a>
                 </nav>
+            </div>
+            <div class="user">
+                <img class="userImg" src="assets/img/user.jpg" alt="">
+                <i class="fas fa-caret-down"></i>
             </div>
         </header>
 
@@ -25,19 +42,102 @@
             <h2>When Marnie Was There</h2>
             <p>Anna, uma menina solitária e curiosa, decide explorar uma velha mansão abandonada e conhece uma garota loira misteriosa que somente ela consegue ver.</p>
             <div id="buttons">
-                <button id="btn1">Assistir</button>
-                <button id="btn2">Mais informações</button>
+                <button id="btn1" role="button"> <i class="fas fa-play"></i> <a class="btnFilmVideo" href="https://www.youtube.com/watch?v=jjmrxqcQdYg" target="_blank" rel="noopener noreferrer"> Assistir </a> </button>
+                <button id="btn2" role="button"> <i class="fas fa-info-circle"></i> <a class="btnFilmInfo" href="https://ghibli.fandom.com/wiki/When_Marnie_Was_There" target="_blank" rel="noopener noreferrer">Mais informações</a></button>
             </div>
         </div>
     </div>
 
-    <div id="colection">
-        <div class="films" id="film1"></div>    
-        <div class="films" id="film2"></div>
-        <div class="films" id="film3"></div>
-        <div class="films" id="film4"></div>
-        <div class="films" id="film5"></div>
+    <div id="colection" class="carrosel-filmes">
+        <div class="owl-carousel owl-theme" id="filmsSG">
+            <div class="itemFilm">
+                <img id="0" value="0" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg" alt="castle in the sky">
+            </div>
+            <div class="itemFilm">
+                <img id="1" value="1" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img value="2" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7nO5DUMnGUuXrA4r2h6ESOKQRrx.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xjJU6rwzLX7Jk8HFQfVW6H5guMC.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kowo9E1e1JcWLXj9cCvAOFZcy5n.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5E3Hvbu0bg38ouYf6chGftVGqZ7.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jHWmNr7m544fJ8eItsfNk8fs2Ed.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wTGuHmMIBBgKakY80J1D52VvQKI.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/avPMO5cnaGHgLaNiAIhy33WoQLm.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/TkTPELv4kC3u1lkloush8skOjE.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/67yYwCPq7NbxSF6BIIXCMD34sY0.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mikKSEdk5kLhflWXbp4S5mmHsDo.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oc2OB2KDmSRDMelKEAA1n4YRQL0.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRLYX4RZIyloHSJwvZKAhphAjiB.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mWRQNlWXYYfd2z4FRm99MsgHgiA.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vug1dvDI1tSa60Z8qjCuUE7ntkO.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wOBU3SLjQ9358Km9YWYasPZyebp.jpg" alt="">
+            </div>
+            <div class="itemFilm">
+                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJhFtY3eHuvvACaPpxpzdCLQqpQ.jpg" alt="">
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p class="create"> &copy; Create by <a class="create" href="http://" target="_blank" rel="noopener noreferrer">Camila Silva</a></p>
+    </footer>
+
+    <!-- pop-up -->
+    <div id="popUp">
+        
+    </div>
+
+    <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
+
+    <script src="https://kit.fontawesome.com/a4b98830b5.js"></script>
+
+    <!-- carousel -->
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/setup.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 </body>
 </html>
