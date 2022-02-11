@@ -1,0 +1,13 @@
+*youtube: Expertos Tech
+
+consulta mais lenta, não indexada
+select * from Produtos where Descricao linke '%Produto%'
+
+criação de table com a primary key já adicionada:
+create table Loja(
+	Codigo int not null,
+	Nome varchar(50) not null,
+	IndInativo int not null
+	constraint loja_pk primary key(Codigo)
+)
+

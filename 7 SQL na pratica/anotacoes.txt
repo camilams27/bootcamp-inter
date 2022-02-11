@@ -1,0 +1,14 @@
+select * from Pilotos where ltrim(Nome) = ltrim(' Darth Vader');
+
+ltrim/rtrim: remove espaçamentos a esquerda(l) ou direita (r);
+
+select * from Pilotos where Nome like '%Vader'
+
+like '%'- o que tiver, podendo se antes ou depois. ex:'%l%'; tras todos que tem l entre palavras/letras.
+
+
+dicas:
+-colocar nomes de tabela no plural
+    -nomes que sejam claros  
+
+github: https://github.com/ThiagoAcam/ControleAcessoEstrelaDaMorte
