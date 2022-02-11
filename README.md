@@ -28,10 +28,10 @@ Estará disponível em branches para cada exercício, projeto e curso realizado!
 -  Recriando a interface da netflix ✅
 -  SQL SERVER - Criando suas primeiras consultas ✅
 -  Modelando um banco de dados na prática com SQL SERVER ✅
+-  SQL Server: Boas práticas em bancos relacionais ✅
 
 ####  Learning 🚀
-- SQL Server: Boas práticas em bancos relacionais⏩
-- Introdução ao ReactJS
+- Introdução ao ReactJS ⏩
 - Desenvolvimento de aplicações para internet com ReactJS
 - Trabalhando com componentes React
 - Introdução ao React Hooks
