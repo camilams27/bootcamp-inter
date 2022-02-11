@@ -1,0 +1,179 @@
+SGBD - Sistema Gerenciador de Banco de Dados – em inglês, Data Base Management System.
+Seu principal objetivo é retirar da aplicação cliente a responsabilidade de gerenciar o acesso, a manipulação e a organização dos dados. O SGBD disponibiliza uma interface para que seus clientes possam incluir, alterar ou consultar dados previamente armazenados.Em bancos de dados relacionais a interface é constituída pelas APIs (Application Programming Interface) ou drivers do SGBD, que executam comandos na linguagem SQL (Structured Query Language).
+
+*consistência: garate que os dados estejam iguais em todas as instancias de um bd
+
+*atomicidade: garante que todos os dados respeitem as regras antes de serem gravados no disco
+
+Relacionais :
+-SQL Server
+-Oracle
+-MySQL
+
+NoSQL:
+-MongoDB
+-Neo4j
+-Firebase
+
+float - ponto flutuante (casas decimais)
+int - números inteiros
+bigint - números inteiros maiores (cpf)
+varchar(tamanho para a coluna(limit - 4k)) - alfanúmericos
+char - aceita alfanúmericos
+*varchar(y) x char(y) 
+varchar aceita até y tamanho
+char aceita apenas y tamanho, enquanto não preenche adiciona barras de espaço à direita
+bit- aceita 0 ou 1
+null - aceita nulos
+not null - não aceita
+
+drop table nomeTabela - apaga tabela
+create table nomeTabela - cia tabela
+
++
+
+insert - adiciona dados nas tabelas:
+insert into clientes (codigo, nome, TipoPessoa) values (1,'camila','F') *posso alterar a sequencia, mas os valores devem bater em seus respectivos dados
+ouu
+insert clientes values (2,'Humberto', 'F'),  (3,'Nabi', 'J') *não posso alterar a sequencia das informações
+
+select * from tabela (*=todos) = seleciona todos os elementos de tabela
+
+select nome from clientes (apenas nome da tabela clientes)
+
+where x = y - tras apenas o conteudo especifico (y);
+ex: select * from clientes
+where Nome = 'Camila' (só vem camila)
+
+update - atualiza dados enquanto for 'F':
+update clientes
+set codigo = 3,
+	Nome = 'Nabi'
+where TipoPessoa = 'F' *sem o where, atualiza toda coluna
+
+delete - deleta dado:
+delete 
+from clientes * deleta todos os dados
+where Nome in(Humberto) *deleta quem tiver o nome Humberto.
+
+Operadores
+AND - Pelo menos um falso, é falso
+OR - Pelo menos uma verdade, é verdade
+
+select * from clientes
+where Codigo = 1 AND TipoPessoa='F'
+
++
+funçõe:
+-isnull:
+select isnull(DataCriacao, getdate()),
+* from Clientes
+adiciona a data atual para a de Criacao.
+
+-case:
+select *,
+		case
+			when TipoPessoa = 'J' then 'Juridica'
+			when TipoPessoa = 'F' then 'Fisica'
+			else 'Pessoa indefinida'
+			end
+from Clientes
+
+-convert:
+select *, convert (varchar, DataSolic)
+from Pedidos
+
+chaves:
+-primaria: uma forma de identificar um registro, unica. 
+ex: cpf
+*Podendo ser única ou composta
+
+-estrangeira: faz relação entre duas tabelas. Uma cópia da chave primaria, mesmo tipo e quantidade
+
+adicionar colunas na tabela:
+alter table nomeTabela add nomeColuna int (tipo)
+
+relacionamento:
+se da pela forma de identificar as informações e como elas se relacionam.
+Um cliente tem n Pedidos
+Um pedido só tem um cliente
+*relação de 1 para n
+
+para select + de uma tabela:
+
+*adicionando um 'apelido' para tabela
+select *
+from - Clientes cli -
+
+inner join:
+tras uma tabela com todos os clientes que estão na tabela do pedido. De acordo com o on.
+
+select *
+from Clientes cli
+inner join Pedidos ped
+on cli.Codigo = ped.CodigoCliente
+
+left join:
+tras todos as informações que tiverem na tabela a esquerda e se tiver, tras info da direita (tras null)
+
+select *
+from Clientes cli
+left join Pedidos ped
+on cli.Codigo = ped.CodigoCliente
+
+right join:
+tras todos as informações que tiverem na tabela a esquerda e se tiver, tras info da direita (tras null)
+
+select *
+from Clientes cli
+right join Pedidos ped
+on cli.Codigo = ped.CodigoCliente
+
+*join em tabelas em chaves compostas:
+
+select *
+from PedidoItem t1
+inner join PedidoItemLog t2
+on t1.CodigoPedido = t2.CodigoPedido
+and t1.CodigoProduto = t2.CodigoProduto
+inner join StatusPedido t3
+on t3.Codigo = t2.CodigoStatusPedidoItem
+where Preco between 1 and 4
+*between preço entre 1 e 4
+
+funcoes:
+sum() - tras a soma de todas as linhas
+
+select sum(Preco * Quantidade)
+from PedidoItem t1
+inner join PedidoItemLog t2
+on t1.CodigoPedido = t2.CodigoPedido
+and t1.CodigoProduto = t2.CodigoProduto
+inner join StatusPedido t3
+on t3.Codigo = t2.CodigoStatusPedidoItem
+
+avg- tras a média;
+
+select sum(Preco)
+from PedidoItem t1
+inner join PedidoItemLog t2
+on t1.CodigoPedido = t2.CodigoPedido
+and t1.CodigoProduto = t2.CodigoProduto
+inner join StatusPedido t3
+on t3.Codigo = t2.CodigoStatusPedidoItem
+
+group by - agrupar, indicar quais colunas serão agrupadas quando usa-se a função de agregação
+
+order by - ordenar, pelo nome da coluna
+*1 desc 
+
+having *tem q ser utilizado depois do group by
+
+in(): é uma função que trás os valores que existem nos parametros
+not in: é negação 
+** melhor n usar, use:
+where, é utilizavel not 
+
+count(): função que conta qnts vezes algum dado tem 
+*group by
+
