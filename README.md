@@ -26,9 +26,22 @@ Estará disponível em branches para cada exercício, projeto e curso realizado!
 -  Manipulando DOM JS ✅
 -  Desafios JS ✅
 -  Recriando a interface da netflix ✅
+-  SQL SERVER - Criando suas primeiras consultas ✅
+-  Modelando um banco de dados na prática com SQL SERVER ✅
 
 ####  Learning 🚀
--  SQL SERVER - Criando suas primeiras consultas ⏩
+- SQL Server: Boas práticas em bancos relacionais⏩
+- Introdução ao ReactJS
+- Desenvolvimento de aplicações para internet com ReactJS
+- Trabalhando com componentes React
+- Introdução ao React Hooks
+- Trabalhando com States e Effects no ReactJS
+- Introdução a APIs e métodos HTTP
+- Instalando e configurando ambiente Node.js
+- Explorando o estilo arquitetural REST com Node.js
+- Node.js com banco de dados relacionais
+- Microsserviços e integração com Node.js
+- Integrando um BackEnd em Node.js com FrontEnd em react para um ecommerce
 
 ### Find me  🌎
 >Cami 👩🏽‍💻</br> </br>
