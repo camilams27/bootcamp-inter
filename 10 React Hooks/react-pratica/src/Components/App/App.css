@@ -1,0 +1,16 @@
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+#mais{
+    color: red;
+}
+
+.menosAct{
+    color: blue;
+}
+
+.menosDisb{
+    color: grey;
+}
